@@ -42,3 +42,12 @@
 .btn-navbar-burger:hover {
   background-color: #d8d8d8;
 }
+
+.navbar-login-time{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 1px;
+}

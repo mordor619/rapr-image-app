@@ -1,8 +1,21 @@
 import React from "react";
 import { AiFillCaretDown } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
 
 function DropdownNavbar() {
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.clear();
+    navigate('/login');
+  }
+
+  const handleUpload = () => {
+    navigate('/upload');
+  }
+
   return (
     <div className="dropdown">
       <button className="dropbtn">
@@ -25,9 +38,8 @@ function DropdownNavbar() {
         </div>
       </button>
       <div className="dropdown-content">
-        <a className="dropdown-content-text" href="#">Profile</a>
-        <a className="dropdown-content-text" href="#">Help</a>
-        <a className="dropdown-content-text" href="#">Logout</a>
+        <button className="dropdown-content-text" onClick={handleUpload}>Upload</button>
+        <button className="dropdown-content-text" onClick={handleLogout}>Logout</button>
       </div>
     </div>
   );

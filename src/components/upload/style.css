@@ -1,0 +1,32 @@
+.sidebar-open {
+  margin: 35px;
+}
+
+.sidebar-closed {
+  margin: 25px 0px 25px 190px;
+}
+
+.upload-label {
+  font-size: 32px;
+}
+
+.hr-upload {
+  width: 125px;
+  margin-left: 40px;
+}
+
+.preview-img{
+  height: 200px;
+  width: 200px;
+  margin: 20px 20px 0px 20px;
+}
+
+.uploaded-images-here{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.uploaded-images-here span{
+  margin: 22px;
+}
+

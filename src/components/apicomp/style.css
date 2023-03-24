@@ -1,0 +1,54 @@
+.headApiLoad {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.items {
+  margin-bottom: 1rem;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 97%;
+  margin: 20px;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+#customers th:hover {
+  cursor: pointer;
+}
+
+#customers thead th.ascending::after {
+  content: "👇";
+  display: inline-block;
+  margin-left: 1em;
+}
+
+#customers thead th.descending::after {
+  content: "☝️";
+  display: inline-block;
+  margin-left: 1em;
+}

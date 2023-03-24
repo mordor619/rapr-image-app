@@ -4,17 +4,24 @@ import { useNavigate } from "react-router-dom";
 import "./style.css";
 
 function DropdownNavbar() {
-
   const navigate = useNavigate();
 
   const handleLogout = () => {
     localStorage.clear();
-    navigate('/login');
-  }
+    navigate("/login");
+  };
 
   const handleUpload = () => {
-    navigate('/upload');
-  }
+    navigate("/upload");
+  };
+
+  const gotoApiComponent = () => {
+    navigate("/apicomp");
+  };
+
+  const gotoCalendarComponent = () => {
+    navigate("/calendarcomp");
+  };
 
   return (
     <div className="dropdown">
@@ -38,8 +45,21 @@ function DropdownNavbar() {
         </div>
       </button>
       <div className="dropdown-content">
-        <button className="dropdown-content-text" onClick={handleUpload}>Upload</button>
-        <button className="dropdown-content-text" onClick={handleLogout}>Logout</button>
+        <button className="dropdown-content-text" onClick={gotoApiComponent}>
+          Api comp
+        </button>
+        <button
+          className="dropdown-content-text"
+          onClick={gotoCalendarComponent}
+        >
+          Calendar comp
+        </button>
+        <button className="dropdown-content-text" onClick={handleUpload}>
+          Upload
+        </button>
+        <button className="dropdown-content-text" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     </div>
   );

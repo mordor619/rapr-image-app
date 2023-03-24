@@ -11,6 +11,8 @@ import Login from "./components/login";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import Upload from "./components/upload";
+import ApiComp from "./components/apicomp";
+import CalendarComp from "./components/calendar";
 
 function App() {
   const navigate = useNavigate();
@@ -32,6 +34,10 @@ function App() {
         <Route exact path="/" element={<Home />} />
 
         <Route path="/login" element={<Login />} />
+
+        <Route path="/apicomp" element={<ApiComp />} />
+
+        <Route path="/calendarcomp" element={<CalendarComp />} />
 
         <Route
           path="/upload"
